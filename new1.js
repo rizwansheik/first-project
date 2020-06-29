@@ -1,6 +1,10 @@
-        const elbutton=document.querySelector("#button");
-       
-       elbutton.click()
-{
-    
-}
+      var a = document.getElementsByTagName('button');
+      for(var i = 0;i<a.length;i++)
+      {
+            a[i].onclick =function(){
+                for(var j=0;j<a.length;i++){
+                    a[j].style.backgroundColor="";
+                }
+               a[i].style.backgroundColor="red";
+            }
+      }
